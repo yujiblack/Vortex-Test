@@ -8,12 +8,3 @@ func TestAdd(t *testing.T) {
 		t.Errorf("expected 5, got %d", result)
 	}
 }
-```
-
----
-
-**`go.mod`**
-```
-module voxdeploy-test
-
-go 1.24

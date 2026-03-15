@@ -9,5 +9,4 @@ func add(a, b int) int {
 func main() {
 	result := add(2, 3)
 	fmt.Println("Result:", result)
-	this is not valid go code
 }

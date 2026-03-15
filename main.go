@@ -2,11 +2,16 @@ package main
 
 import "fmt"
 
-func add(a, b int) int {
-	return a + b
+type User struct {
+	Name string
+	Age  int
+}
+
+func getUser() *User {
+	return nil // ← returns nil
 }
 
 func main() {
-	result := add(2, 3)
-	fmt.Println("Result:", result)
+	user := getUser()
+	fmt.Println(user.Name) // ← nil pointer dereference
 }

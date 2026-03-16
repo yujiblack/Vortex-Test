@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http" // <-- Add this
+)
 
 type User struct {
 	Name string
@@ -8,8 +11,9 @@ type User struct {
 }
 
 func getUser() *User {
-	return nil
+	return &User{Name: "Gourav", Age: 20}
 }
+
 func min(a, b int) int {
 	if a < b {
 		return a
@@ -20,9 +24,9 @@ func min(a, b int) int {
 func main() {
 	user := getUser()
 	fmt.Println(user.Name)
-	print(user.Agee
-	print(user.Name
-	fmt.Println(user.Name)
-	print(user.Agee
+	fmt.Println(user.Age)
 
-	}
+	// Keep the app running so Kubernetes doesn't restart it!
+	fmt.Println("Server is running on port 8080...")
+	http.ListenAndServe(":8080", nil)
+}

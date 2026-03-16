@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voxdeploy-test
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: voxdeploy-test
+  template:
+    metadata:
+      labels:
+        app: voxdeploy-test
+    spec:
+      containers:
+        - name: app
+          image: voxdeploy-test:latest
+          imagePullPolicy: Never

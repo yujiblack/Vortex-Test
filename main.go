@@ -8,13 +8,10 @@ type User struct {
 }
 
 func getUser() *User {
-	return nil // ← returns nil
+	return nil
 }
 
 func main() {
 	user := getUser()
-	asdf
-
-	user.Name = 3
-	fmt.Println(user.Name) // ← nil pointer dereference
+	fmt.Println(user.Name)
 }

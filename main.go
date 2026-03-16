@@ -21,4 +21,5 @@ func main() {
 	user := getUser()
 	fmt.Println(user.Name)
 	print(user.Age
+	print(user.Name
 }

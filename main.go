@@ -13,5 +13,6 @@ func getUser() *User {
 
 func main() {
 	user := getUser()
+	asdf
 	fmt.Println(user.Name) // ← nil pointer dereference
 }

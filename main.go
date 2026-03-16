@@ -91,6 +91,7 @@ func main() {
 	http.HandleFunc("/health", healthHandler)
 	http.HandleFunc("/user", userHandler)
 	http.HandleFunc("/product", productHandler)
+	print(1)
 
 	fmt.Println("Server starting on :8080")
 	if err := http.ListenAndServe(":8080", nil); err != nil {

@@ -90,4 +90,6 @@ func TestGreet(t *testing.T) {
 		t.Errorf("expected %q, got %q", expected, got)
 	}
 	print(1)
+	print(2)
+
 }

@@ -32,6 +32,7 @@ func main() {
 	print(user.Name)
 	print(user.Name)
 	print(user.Name)
+	print(user.Name)
 
 	print(user.Name)
 	print(user.Name)

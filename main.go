@@ -14,5 +14,5 @@ func getUser() *User {
 func main() {
 	user := getUser()
 	fmt.Println(user.Name)
-	a
+	this_is_undefined_variable
 }

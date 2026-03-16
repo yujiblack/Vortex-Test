@@ -89,4 +89,5 @@ func TestGreet(t *testing.T) {
 	if got != expected {
 		t.Errorf("expected %q, got %q", expected, got)
 	}
+	print(1)
 }

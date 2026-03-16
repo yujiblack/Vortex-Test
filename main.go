@@ -23,5 +23,6 @@ func main() {
 	print(user.Agee
 	print(user.Name
 	fmt.Println(user.Name)
+	print(user.Agee
 
 	}

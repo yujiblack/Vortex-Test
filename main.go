@@ -31,5 +31,6 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 	print(user.Name)
 	print(user.Name)
+	print(user.Name)
 
 }

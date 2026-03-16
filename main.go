@@ -28,7 +28,7 @@ func main() {
 
 	// Keep the app running so Kubernetes doesn't restart it!
 	fmt.Println("Server is running on port 8080...")
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8080", nil
 	print(user.Name)
 	print(user.
 	print(user.Name)

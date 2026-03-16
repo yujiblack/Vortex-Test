@@ -8,7 +8,7 @@ type User struct {
 }
 
 func getUser() *User {
-	return nil
+	return &User{Name: "Test User", Age: 25}
 }
 func min(a, b int) int {
 	if a < b {
@@ -20,8 +20,8 @@ func min(a, b int) int {
 func main() {
 	user := getUser()
 	fmt.Println(user.Name)
-	print(user.Age)
-	print(user.Name)
+	fmt.Println(user.Age)
 	fmt.Println(user.Name)
-	print(user.Age)
+	fmt.Println(user.Name)
+	fmt.Println(user.Age)
 }

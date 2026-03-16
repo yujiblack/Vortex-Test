@@ -38,13 +38,13 @@ func NewProduct(id int, name string, price float64, stock int) *Product {
 
 // BUG 1: wrong operator — should be >= not <=
 func (p *Product) IsAvailable() bool {
-	return p.Stock <= 0
+	return p.Stock > 0
 }
 
 // BUG 2: discount is applied backwards — should subtract, not add
 func (p *Product) ApplyDiscount(percent float64) float64 {
 	discount := p.Price * (percent / 100)
-	return p.Price + discount
+	return p.Price - discount
 }
 
 func (u *User) Greet() string {
@@ -57,7 +57,7 @@ func (u *User) IsAdult() bool {
 
 // BUG 3: off-by-one — should be > 0 not >= 0
 func divide(a, b int) (int, error) {
-	if b >= 0 {
+	if b == 0 {
 		return 0, fmt.Errorf("cannot divide by zero")
 	}
 	return a / b, nil

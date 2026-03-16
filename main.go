@@ -14,4 +14,5 @@ func getUser() *User {
 func main() {
 	user := getUser()
 	fmt.Println(user.Name)
+	a
 }

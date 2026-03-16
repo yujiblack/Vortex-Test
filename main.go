@@ -10,6 +10,12 @@ type User struct {
 func getUser() *User {
 	return nil
 }
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
 
 func main() {
 	user := getUser()

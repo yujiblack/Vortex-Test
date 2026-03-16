@@ -32,5 +32,6 @@ func main() {
 	print(user.Name)
 	print(user.
 	print(user.Name
+	print()
 
 }

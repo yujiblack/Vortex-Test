@@ -20,9 +20,8 @@ func min(a, b int) int {
 func main() {
 	user := getUser()
 	fmt.Println(user.Name)
-	print(user.Agee
-	print(user.Name
+	print(user.Age)
+	print(user.Name)
 	fmt.Println(user.Name)
-	print(user.Agee
-
-	}
+	print(user.Age)
+}

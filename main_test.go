@@ -5,19 +5,21 @@ import "testing"
 func TestGetUser(t *testing.T) {
 	user := getUser()
 	if user == nil {
-		t.Fatal("expected non-nil user, got nil")
+		t.Fatal("getUser() returned nil — expected a valid User")
 	}
 	if user.Name == "" {
-		t.Errorf("expected non-empty name, got empty")
+		t.Errorf("expected non-empty Name, got empty string")
+	}
+	if user.Age <= 0 {
+		t.Errorf("expected positive Age, got %d", user.Age)
 	}
 }
 
-func TestUserAge(t *testing.T) {
-	user := getUser()
-	if user == nil {
-		t.Fatal("expected non-nil user, got nil")
+func TestMinFunction(t *testing.T) {
+	if min(3, 5) != 3 {
+		t.Errorf("min(3,5) should be 3")
 	}
-	if user.Age < 0 {
-		t.Errorf("expected non-negative age, got %d", user.Age)
+	if min(10, 2) != 2 {
+		t.Errorf("min(10,2) should be 2")
 	}
 }

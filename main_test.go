@@ -26,12 +26,3 @@ func TestMinFunction(t *testing.T) {
 		t.Errorf("min(-10,2) should be 2")
 	}
 }
-
-// func TestMinFunction(t *testing.T) {
-// 	if min(3, 5) != 3 {
-// 		t.Errorf("min(3,5) should be 3")
-// 	}
-// 	if min(10, 2) != 2 {
-// 		t.Errorf("min(10,2) should be 2")
-// 	}
-// }

@@ -91,8 +91,6 @@ func main() {
 	http.HandleFunc("/health", healthHandler)
 	http.HandleFunc("/user", userHandler)
 	http.HandleFunc("/product", productHandler)
-	print(this filee will cause error since its beenn designed to have null exceptions )
-
 	fmt.Println("Server starting on :8080")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		fmt.Printf("Server error: %v\n", err)
